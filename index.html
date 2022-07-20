@@ -14,11 +14,19 @@
 
 		<title>Frontend Mentor | NFT preview card component</title>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
 			.attribution {
 				font-size: 11px;
 				text-align: center;
+				display: none;
 			}
 			.attribution a {
 				color: hsl(228, 45%, 44%);
@@ -26,8 +34,36 @@
 		</style>
 	</head>
 	<body>
-		Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-		0.041 ETH 3 days left Creation of Jules Wyvern
+		<main class="container">
+			<section class="card">
+				<div class="overlay">
+					<img
+						src="./images/image-equilibrium.jpg"
+						alt="NFT image"
+						class="nft"
+					/>
+					<div><img src="./images/icon-view.svg" alt="" /></div>
+				</div>
+				<h1 class="heading">Equilibrium #3429</h1>
+				<p class="desc">
+					Our Equilibrium collection promotes balance and calm.
+				</p>
+				<div class="details">
+					<div class="price">
+						<img src="./images/icon-ethereum.svg" alt="ethereum" />
+						0.041 ETH
+					</div>
+					<div class="time">
+						<img src="./images/icon-clock.svg" alt="clock" />
+						3 days left
+					</div>
+				</div>
+				<div class="author">
+					<img src="./images/image-avatar.png" alt="avatar" />
+					Creation of <span>Jules Wyvern</span>
+				</div>
+			</section>
+		</main>
 
 		<div class="attribution">
 			Challenge by
